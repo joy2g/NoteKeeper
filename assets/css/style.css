@@ -1,0 +1,374 @@
+body {
+  min-height: 600px;
+  font-family: 'Roboto', 'sans-serif';
+  background-color: #eee;
+}
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 20px;
+  z-index: 1000;
+  background: #fff;
+}
+header .top {
+  position: relative;
+  margin-bottom: 20px;
+}
+header .top .logo {
+  position: absolute;
+  left: 50px;
+}
+header .top .logo h2 {
+  color: #aaa;
+}
+header .top .logo span {
+  color: #666;
+}
+@media (max-width: 500px) {
+  header .top .logo {
+    display: none;
+  }
+  header .top .logo .searchbar {
+    width: 100%;
+  }
+}
+header .top .searchbar {
+  padding-top: 20px;
+}
+header .top .searchbar .input-group {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+header .top .searchbar .input-group #searchicon {
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 0px;
+  padding-right: 0px;
+}
+header .top .searchbar .input-group .filter {
+  padding-top: 10px;
+}
+header .top .searchbar .input-group .filter button {
+  border: 1px solid #ddd;
+}
+header .top .searchbar .input-group .advanceSearch {
+  visibility: hidden;
+  position: absolute;
+  bottom: -100px;
+  left: 0px;
+  height: 100px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  z-index: 1100;
+  width: 100%;
+  text-align: center;
+}
+header .top .searchbar .input-group li {
+  list-style: none;
+}
+header .top .searchbar .input-group button {
+  height: 28px;
+  width: 28px;
+  border: none;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+header .top .searchbar .input-group .default {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+header .top .searchbar .input-group .red {
+  background-color: #ED8C79;
+}
+header .top .searchbar .input-group .orange {
+  background-color: #F5CB82;
+}
+header .top .searchbar .input-group .yellow {
+  background-color: #EEF27E;
+}
+header .top .searchbar .input-group .blue {
+  background-color: #76D7F5;
+}
+header .top .searchbar .input-group .teal {
+  background-color: #8DF7D7;
+}
+header .top .searchbar .input-group .gray {
+  background-color: #C9C9C5;
+}
+header .top .searchbar .input-group .green {
+  background-color: #85F28D;
+}
+header .top .searchbar input {
+  border-radius: 0px;
+  box-shadow: none;
+  border: 1px solid #ddd;
+  border-left: none;
+  background: #eee;
+  cursor: pointer;
+}
+header .top .leftBar {
+  position: absolute;
+  z-index: 1000;
+  top: 113px;
+  left: -284px;
+  width: 300px;
+  height: 1000px;
+  background-color: #fff;
+  padding-top: 20px;
+}
+header .top .leftBar table tr {
+  height: 60px;
+}
+header .top .leftBar .icon {
+  margin-right: 15px;
+}
+header .top .leftBar table td {
+  padding-left: 25px;
+  padding-top: 15px;
+  font-size: 16px;
+  color: #666;
+  border: none;
+}
+header .top .leftBar table tr {
+  cursor: pointer;
+}
+header .top .leftBar .groupChild:hover {
+  background-color: #fff;
+}
+header .menubar {
+  height: 40px;
+  background: #FAC248;
+  padding: 10px 0px 0px 0px;
+  position: relative;
+}
+header .menubar .controlBar {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  top: 0px;
+  left: 25%;
+  width: 50%;
+  height: 40px;
+  text-align: center;
+}
+header .menubar .controlBar ul {
+  padding-top: 10px;
+}
+header .menubar ul {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+header .menubar li {
+  display: inline;
+  list-style: none;
+}
+header .menubar button {
+  background: none;
+  border: none;
+}
+.bodyContent {
+  margin-top: 150px;
+}
+.bodyContent .addnote .addNoteWrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.bodyContent .addnote .addNoteWrapper input {
+  border-radius: 0px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 15px;
+}
+.bodyContent .content {
+  padding-top: 20px;
+}
+.bodyContent .note {
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  position: relative;
+}
+.bodyContent .note .noteContent {
+  padding: 10px 20px;
+}
+.bodyContent .note button.check {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.bodyContent .note h4 {
+  font-weight: bold;
+}
+.bodyContent .note ul {
+  padding-left: 0px;
+  margin: 0 auto;
+}
+.bodyContent .note li {
+  display: inline;
+  list-style: none;
+}
+.bodyContent .note button {
+  background: none;
+  border: none;
+}
+.bodyContent .note button:hover {
+  opacity: 0.7;
+}
+.bodyContent .note .notePic {
+  width: 100%;
+}
+.default {
+  background-color: #fff;
+}
+.red {
+  background-color: #ED8C79;
+}
+.orange {
+  background-color: #F5CB82;
+}
+.yellow {
+  background-color: #EEF27E;
+}
+.blue {
+  background-color: #76D7F5;
+}
+.teal {
+  background-color: #8DF7D7;
+}
+.gray {
+  background-color: #C9C9C5;
+}
+.green {
+  background-color: #85F28D;
+}
+.noteForm {
+  display: none;
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+.noteForm input,
+.noteForm textarea {
+  padding: 10px;
+  width: 100%;
+  display: block;
+  border-radius: 0px;
+  border-left: none;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: none;
+}
+.noteForm input[name=title] {
+  font-weight: bold;
+}
+.noteForm ul {
+  padding-left: 10px;
+  margin: 0 auto;
+}
+.noteForm li {
+  display: inline;
+  list-style: none;
+}
+.noteForm button {
+  background: none;
+  border: none;
+}
+.noteForm button:hover {
+  opacity: 0.7;
+}
+.noteForm button[type=submit],
+.noteForm button[name=cancel] {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.noteForm button[type=submit]:hover,
+.noteForm button[name=cancel]:hover {
+  background-color: #eee;
+}
+.noteForm button.changeColor:hover .colorPicker {
+  opacity: 0.9;
+  visibility: visible;
+}
+.noteForm .colorPicker {
+  display: none;
+  border-radius: 5px;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+  background: #fee;
+  width: 175px;
+  height: 75px;
+  padding: 5px 4px;
+  box-shadow: 1px 1px 1px 1px #eee;
+}
+.noteForm .colorPicker button {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+}
+.noteForm .colorPicker button.cancel {
+  background: url('../img/close_btn.png');
+  background-size: 100%;
+}
+.noteForm .colorPicker .colorGroup {
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.noteForm .reminderPicker {
+  z-index: 1000;
+  display: none;
+  background: #fff;
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #999D9E;
+  position: absolute;
+  left: 15px;
+}
+.noteForm .reminderPicker table tr {
+  cursor: pointer;
+}
+.noteForm .reminderPicker table td {
+  border-top: none;
+}
+.noteForm .reminderPicker input {
+  background: inherit;
+}
+.noteForm button.default {
+  background-color: #fff;
+}
+.noteForm button.red {
+  background-color: #ED8C79;
+}
+.noteForm button.orange {
+  background-color: #F5CB82;
+}
+.noteForm button.yellow {
+  background-color: #EEF27E;
+}
+.noteForm button.blue {
+  background-color: #76D7F5;
+}
+.noteForm button.teal {
+  background-color: #8DF7D7;
+}
+.noteForm button.gray {
+  background-color: #C9C9C5;
+}
+.noteForm button.green {
+  background-color: #85F28D;
+}
+button:focus {
+  outline: none;
+}

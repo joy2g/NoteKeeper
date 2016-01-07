@@ -55,19 +55,18 @@ Display.showReminderPicker = function (dom) {
 
 // Show and hide left bar
 Display.showLeftBar = function () {
-	var bodyClass = $('body').attr('class');
-	if (bodyClass == "") {
+	if (!$('body').hasClass('leftBarOut')) {
 		$('.leftBar').animate({
 		left:15
 		}, 100);
-		$('body').attr('class', 'leftBarOut');
+		$('body').addClass('leftBarOut');
 	} else {
 		Display.hideLeftBar();
-		$('body').attr('class', '');
 	}
 }
 
 Display.hideLeftBar = function () {
+	$('body').removeClass('leftBarOut');
 	$('.leftBar').animate({
 		left:-284
 	}, 100);
